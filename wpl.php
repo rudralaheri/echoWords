@@ -16,11 +16,11 @@
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         // Database connection
-        $conn = new mysqli('localhost', 'root', '', 'wpl');
+        $conn = new mysqli('localhost', 'root', '', 'echowords');
         if ($conn->connect_error) {
             die('Connection failed: ' . $conn->connect_error);
         } else {
-            $stmt = $conn->prepare("INSERT INTO registration (firstName, lastName, email, password, phone) VALUES (?, ?, ?, ?, ?)");
+            $stmt = $conn->prepare("INSERT INTO user_database (Fname, Lname, Email, Pass, Phone) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param("sssss", $firstName, $lastName, $email, $hashedPassword, $phone);
             if ($stmt->execute()) {
                 echo "Registration successful!";
