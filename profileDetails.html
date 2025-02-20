@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            margin: 10px 0px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Profile Picture Section */
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .profile-picture div {
+            width: 120px;
+            height: 120px;
+            background-color: #cccccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Navigation Section */
+        .navigation {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+        }
+
+        /* Weekly Tracker */
+        .weekly-tracker {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .day-box {
+            width: 100px; /* Longer width */
+            height: 40px; /* Rectangular height */
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333333;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .day-box.completed {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .day-box:hover {
+            border-color: #0056b3;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            margin: 10px 10px;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f1f1f1;
+            color: #777777;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Picture Section -->
+    <div class="profile-picture">
+        <div>
+            <p>Profile</p>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="navigation">
+        <a href="#bookmarks">Bookmarks</a>
+        <a href="#history">History</a>
+        <a href="#wishlist">Wishlist</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+
+        <!-- Weekly Tracker Section -->
+        <div class="content-section">
+            <h3>Weekly Goals</h3>
+            <div class="weekly-tracker">
+                <div class="day-box completed">Mon</div>
+                <div class="day-box completed">Tue</div>
+                <div class="day-box">Wed</div>
+                <div class="day-box">Thu</div>
+                <div class="day-box">Fri</div>
+                <div class="day-box completed">Sat</div>
+                <div class="day-box">Sun</div>
+            </div>
+        </div>
+
+        <!-- User Details Section -->
+        <div class="content-section">
+            <h3>Details of the User</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Username:</strong> johndoe123</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Password:</strong> *********</p>
+
+            <!-- Edit Button -->
+            <button>Edit Details</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 User Profile Page. All rights reserved.
+    </footer>
+
+</body>
+</html>

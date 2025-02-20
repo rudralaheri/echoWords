@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .book-box h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .book-box p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 40px;
+            color: #333;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(to right, #0BACC8, #615f5f); height: 100vh; margin: 0;">
+
+
+
+    <header>
+        <a href="profileDetails.html">Profile</a>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#news">Categories</a>
+        <select>
+            <option value="#">Browse</option>
+            <option value="#adventure">Adventure</option>
+            <option value="#fantasy">Fantasy</option>
+            <option value="#sci-fi">Sci-Fi</option>
+            <option value="#mystery">Mystery</option>
+            <option value="#romance">Romance</option>
+            <option value="#thriller">Thriller</option>
+            <option value="#horror">Horror</option>
+        </select>
+    </nav>
+
+    <p class="section-title">Continue Reading</p>
+
+    <div class="container">
+        <div class="book-box">
+            <h3>Wizards of Waverly Place</h3>
+            <p>2000 pages remaining.</p>
+        </div>
+
+        <div class="book-box">
+            <h3>Harry Potter</h3>
+            <p>2 pages remaining.</p>
+        </div>
+
+        <div class="book-box">
+            <h3>Lord of the Rings</h3>
+            <p>500 pages remaining.</p>
+        </div>
+
+        <div class="book-box">
+            <h3>To Kill a Mockingbird</h3>
+            <p>150 pages remaining.</p>
+        </div>
+    </div>
+
+    <p class="section-title">Popular Read</p>
+
+    <div class="container">
+        <div class="book-box">
+            <h3>The Great Gatsby</h3>
+            <p>190 pages</p>
+        </div>
+
+        <div class="book-box">
+            <h3>1984</h3>
+            <p>250 pages</p>
+        </div>
+
+        <div class="book-box">
+            <h3>Pride and Prejudice</h3>
+            <p>300 pages</p>
+        </div>
+
+        <div class="book-box">
+            <h3>Moby Dick</h3>
+            <p>321 pages</p>
+        </div>
+    </div>
+
+</body>
+</html>
