@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .navbar select {
+            background-color: #f1f1f1;
+            color: #333333;
+            border: 1px solid #cccccc;
+            padding: 5px;
+            border-radius: 3px;
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 5% 10%;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .book-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            height: 240px;
+            margin: 10px;
+            float: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .book-card:hover img {
+            opacity: 0.7;
+        }
+
+        .book-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #007bff;
+        }
+
+        .book-card p {
+            font-size: 14px;
+            margin: 0;
+            color: #555555;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            color: #777777;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <select>
+                <option value="#">Browse</option>
+                <option value="#adventure">Adventure</option>
+                <option value="#fantasy">Fantasy</option>
+                <option value="#sci-fi">Sci-Fi</option>
+                <option value="#mystery">Mystery</option>
+                <option value="#romance">Romance</option>
+                <option value="#thriller">Thriller</option>
+                <option value="#horror">Horror</option>
+            </select>
+            <a href="#home">Home</a>
+            <a href="#news">Categories</a>
+        </div>
+        <div>
+            <a href="profileDetails.html">Profile</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section-title">Continue Reading...</div>
+
+        <div class="book-card">
+            <img src="wizard.jpeg" alt="Book Cover">
+            <h3>Wizards of Waverly Place</h3>
+            <p>2000 pages remaining.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="harry.jpg" alt="Book Cover">
+            <h3>Harry Potter</h3>
+            <p>2 pages remaining.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="lord.jpg" alt="Book Cover">
+            <h3>Lord of the Rings</h3>
+            <p>500 pages remaining.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="mockingb.jpg" alt="Book Cover">
+            <h3>To Kill a Mockingbird</h3>
+            <p>150 pages remaining.</p>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="section-title">Popular Read...</div>
+
+        <div class="book-card">
+            <img src="great.jpg" alt="Book Cover">
+            <h3>The Great Gatsby</h3>
+            <p>190 pages</p>
+        </div>
+
+        <div class="book-card">
+            <img src="1984.jpg" alt="Book Cover">
+            <h3>1984</h3>
+            <p>250 pages</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pride.jpg" alt="Book Cover">
+            <h3>Pride and Prejudice</h3>
+            <p>300 pages</p>
+        </div>
+
+        <div class="book-card">
+            <img src="mobilityDick.jpg" alt="Book Cover">
+            <h3>Moby Dick</h3>
+            <p>321 pages</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <footer>
+        &copy; 2025 Reading Portal. All rights reserved.
+    </footer>
+</body>
+</html>
