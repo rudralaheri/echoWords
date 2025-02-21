@@ -1,6 +1,6 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "GET") { // Change to GET method
-        // Get values from the URL (GET method)
+    if ($_SERVER["REQUEST_METHOD"] == "GET") { 
+        
         $firstName = $_GET['firstName'];
         $lastName = $_GET['lastName'];
         $email = $_GET['email'];
@@ -8,15 +8,13 @@
         $confirmPass = $_GET['confirmPass'];
         $phone = $_GET['phone'];
 
-        // Check if passwords match
+       
         if ($password !== $confirmPass) {
             die("Error: Passwords do not match.");
         }
 
-        // Hash password for security
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        // Database connection
         $conn = new mysqli('localhost', 'root', '', 'echowords');
         if ($conn->connect_error) {
             die('Connection failed: ' . $conn->connect_error);
