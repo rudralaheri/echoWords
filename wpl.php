@@ -7,15 +7,13 @@
         $confirmPass = $_POST['confirmPass'];
         $phone = $_POST['phone'];
 
-        // Check if passwords match
+        
         if ($password !== $confirmPass) {
             die("Error: Passwords do not match.");
         }
 
-        // Hash password for security
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        // Database connection
         $conn = new mysqli('localhost', 'root', '', 'echowords');
         if ($conn->connect_error) {
             die('Connection failed: ' . $conn->connect_error);
