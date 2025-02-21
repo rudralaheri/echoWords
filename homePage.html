@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>EchoWords - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,15 +15,34 @@
         header {
             background-color: #333;
             color: white;
-            padding: 10px;
-            text-align: right;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+        }
+
+        .profile-link {
+            position: absolute;
+            right: 20px;
+            font-size: 18px;
         }
 
         header a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
-            margin-left: 20px;
         }
 
         nav {
@@ -83,10 +102,9 @@
 </head>
 <body style="background: linear-gradient(to right, #0BACC8, #615f5f); height: 100vh; margin: 0;">
 
-
-
     <header>
-        <a href="profileDetails.html">Profile</a>
+        <div class="logo">EchoWords</div>
+        <a href="profileDetails.html" class="profile-link">Profile</a>
     </header>
 
     <nav>
